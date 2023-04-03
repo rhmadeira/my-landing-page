@@ -1,7 +1,10 @@
+import { BrowserRouter } from "react-router-dom";
+import DefaultRoutes from "./routes/DefaultRoutes";
+
 export default function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <BrowserRouter>
+      <DefaultRoutes />
+    </BrowserRouter>
   );
 }
