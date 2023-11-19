@@ -7,12 +7,12 @@ import "./globals.css";
 import { ThemeProvider } from "./_components/theme-provider";
 
 const fontSans = FontSans({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   variable: "--font-sans",
 });
 
 const fontHeading = localFont({
-  src: "../shared/assets/fonts/CalSans-SemiBold.woff2",
+  src: "../assets/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
 });
 
@@ -37,11 +37,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={
-          (cn("min-h-screen bg-background font-sans antialiased"),
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
-          fontHeading.variable)
-        }
+          fontHeading.variable
+        )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
