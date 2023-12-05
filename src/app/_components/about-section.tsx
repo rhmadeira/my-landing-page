@@ -48,7 +48,16 @@ export default function AboutSection() {
             assumenda, voluptatum nam provident non tempore maiores sapiente ex
             error possimus maxime.
           </p>
-          <div className="mt-6 flex justify-center md:justify-start gap-6"></div>
+          <div className="mt-6 flex justify-center md:justify-start gap-6">
+            <SocialLink
+              href="https://www.instagram.com/rafael.h.m.f/"
+              Icon={InstagramIcon}
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/rafael-madeira-b40891229/"
+              Icon={LinkedInIcon}
+            />
+          </div>
         </div>
       </div>
     </section>

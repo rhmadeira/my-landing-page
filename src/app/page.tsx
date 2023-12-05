@@ -1,14 +1,13 @@
-import { cn } from "@/lib/utils";
-import { ToggleTheme } from "./_components/toggle-theme";
-import { buttonVariants } from "@/components/ui/button";
 import IntroSection from "./_components/intro-section";
 import AboutSection from "./_components/about-section";
+import FeatureSection from "./_components/feature-section";
 
 export default function Home() {
   return (
     <main className="">
       <IntroSection />
       <AboutSection />
+      <FeatureSection />
       {/* <section id="feature">
         <h1>
           Hi, I am <span className="text-primary">Rafael</span>
